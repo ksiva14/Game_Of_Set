@@ -36,7 +36,7 @@ body {
   border-color: black;
   border-style: solid;
   border-width: 5px;
-  /* layout is rows  */
+  /* to position #scoreboard & .card-button-container */
   display: flex;
   flex-direction: column;
 }
@@ -46,35 +46,38 @@ body {
   margin: 0 0 10px;
   /* add some inner spacing */
   padding: 0 25px;
-  /* put player score side by side */
+  /* to position .players */
   display: flex;
   flex-direction: row;
   justify-content: start;
-  /* put some gap between player score */
+  /* put some spacing between .players */
   column-gap: 50px;
 }
+
 .card-button-container {
+  height: 100%;
+  /* to position #card-container & .button-container */
   display: flex;
   flex-direction: row;
 }
 #card-container {
   background-color: brown;
-  width: 80%;
+  width: 80%; /* 100% - .button-container.width */
 }
-/*--------------------------------------------------------------------------------*/
-/*-------------------------------- Buttons ---------------------------------------*/
-/*--------------------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------------------*/
 /*-------------------------------- Buttons ---------------------------------------*/
 /*--------------------------------------------------------------------------------*/
 .button-container {
   background-color: purple;
-  width: 20%; /* 100% - card-container.width */
+  width: 20%; /* 100% - #card-container.width */
+  height: inherit;
   /* position buttons */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  /* justify-content: space-around; */
   /* add some space between each button */
   gap: 25px;
 }
@@ -85,4 +88,8 @@ button {
   width: 175px;
   height: 50px;
   font-size: 0.9em;
+}
+button:hover {
+  background-color: antiquewhite;
+  color: black;
 }
