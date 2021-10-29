@@ -8,28 +8,33 @@
 
     <link rel="stylesheet" href="lib/css/globalstyle.css" />
     <script src="lib/javascript/player.js" async></script>
+    <script src="lib/javascript/gui.js" async></script>
   </head>
 
   <body>
-    <!-- refer to the gui in project 2 -->
-    <div id="scoreboard">
-      <div class="players">
-        <span>Player1: </span>
-        <span class="player-score"></span>
+    <div id="gameboard">
+      <div id="scoreboard">
+        <div class="players">
+          <span>Player1: </span>
+          <span class="player-score"></span>
+        </div>
+        <div class="players">
+          <span>Player2: </span>
+          <span class="player-score"></span>
+        </div>
       </div>
-      <div class="players">
-        <span>Player2: </span>
-        <span class="player-score"></span>
+      <div class="card-button-container">
+        <div id="card-container">
+          <!-- all card images go in here -->
+          <img src="lib/images/green_one_diamond_open.png" />
+        </div>
+        <div class="button-container">
+          <button class="hints">Hint 1</button>
+          <button class="hints">Hint 2</button>
+          <button class="hints">Hint 3</button>
+          <button>Add 3 Cards</button>
+        </div>
       </div>
-    </div>
-    <div class="card-container">
-      <!-- all card images go in here -->
-    </div>
-    <div id="button-container">
-      <button>Hint 1</button>
-      <button>Hint 2</button>
-      <button>Hint 3</button>
-      <button>Add 3 Cards</button>
     </div>
   </body>
 </html>
