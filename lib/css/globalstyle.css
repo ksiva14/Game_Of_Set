@@ -63,8 +63,29 @@ body {
 #card-container {
   background-color: brown;
   width: 80%; /* 100% - .button-container.width */
-}
 
+  /* to position .card-container-row */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* spacing between each row of card */
+  row-gap: 15px;
+}
+.card-container-row {
+  /* to position .card-container-row */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* spacing between each card */
+  column-gap: 25px;
+}
+.cards {
+  height: 100px;
+}
+.card-selected {
+  /* background: black; */
+  border: 5px solid black;
+}
 /*--------------------------------------------------------------------------------*/
 /*-------------------------------- Buttons ---------------------------------------*/
 /*--------------------------------------------------------------------------------*/
