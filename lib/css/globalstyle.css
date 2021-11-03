@@ -41,7 +41,6 @@ body {
   flex-direction: column;
 }
 #scoreboard {
-  background-color: blue;
   /* add some outer spacing */
   margin: 0 0 10px;
   /* add some inner spacing */
@@ -63,6 +62,10 @@ body {
 #card-container {
   background-color: brown;
   width: 80%; /* 100% - .button-container.width */
+
+  /* add border  */
+  border: 5px solid black;
+  border-radius: 5px;
 
   /* to position .card-container-row */
   display: flex;
@@ -90,7 +93,6 @@ body {
 /*-------------------------------- Buttons ---------------------------------------*/
 /*--------------------------------------------------------------------------------*/
 .button-container {
-  background-color: purple;
   width: 20%; /* 100% - #card-container.width */
   height: inherit;
   /* position buttons */
