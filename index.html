@@ -7,11 +7,6 @@
     <title>Game Of Set</title>
 
     <link rel="stylesheet" href="lib/css/globalstyle.css" />
-    <script src="lib/javascript/player.js" async></script>
-    <script src="lib/javascript/gui.js" async></script>
-    <script src="lib/javascript/game.js" async></script>
-    <script src="lib/javascript/deck.js" async></script>
-    <script src="lib/javascript/card.js" async></script>
     <script src="lib/javascript/game_of_set.js" async></script>
 
   </head>
@@ -20,11 +15,11 @@
     <div id="gameboard">
       <div id="scoreboard">
         <div class="players">
-          <span>Player1: </span>
+          <span id="player1">Player1: </span>
           <span class="player-score"></span>
         </div>
         <div class="players">
-          <span>Player2: </span>
+          <span id=player2>Player2: </span>
           <span class="player-score"></span>
         </div>
       </div>
@@ -51,6 +46,7 @@
           <button class="hints">Hint 2</button>
           <button class="hints">Hint 3</button>
           <button id="add-3-cards">Add 3 Cards</button>
+          <button id="change-player">Change Player</button>
         </div>
       </div>
     </div>
