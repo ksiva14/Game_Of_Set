@@ -3,6 +3,7 @@
   padding: 0px;
   border: 0px;
   margin: 0px;
+  flex-shrink: 0;
 }
 html,
 body {
@@ -25,7 +26,7 @@ body {
   color: blue;
 }
 #gameboard {
-  background-color: aqua;
+  background-color: lightblue;
   width: 80%;
   height: 60%;
   /* position in center of page */
@@ -64,6 +65,7 @@ body {
   width: 80%; /* 100% - .button-container.width */
   overflow-y: scroll; /* make it scrollable if all 81 cards is shown */
   margin: 0 0 25px 0;
+  padding: 50px 0;
 
   /* add border  */
   border: 5px solid black;
@@ -86,9 +88,14 @@ body {
   justify-content: center;
   /* spacing between each card */
   column-gap: 25px;
+  height: 75px;
+
+  /* TODO: DELETE */
+  background-color: lightgreen;
+  width: 100%;
 }
 .cards {
-  height: 100px;
+  height: 125px;
 }
 .card-selected {
   /* background: black; */
