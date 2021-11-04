@@ -51,7 +51,7 @@ class GUI
     end
 
     # Function to add three cards if no set is remaining
-    def add_three_cards(card_deck)
+    def add_three_cards()
       # Make sure there is cards availible to add
       if card_deck.deck_of_cards.length != 0
         3.times do
