@@ -76,6 +76,9 @@ body {
   /* spacing between each row of card */
   row-gap: 15px;
 }
+.hide {
+  display: none;
+}
 .card-container-row {
   /* to position .card-container-row */
   display: flex;
