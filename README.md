@@ -22,7 +22,7 @@ This project is the classic card game, "Set". Graphics are implemented so the pl
     They all have the same shape or have three different shapes.
     They all have the same shading or have three different shadings.
     They all have the same color or have three different colors.
- *  Switch between players by pressing `1` or `2` on your keyboard. (The selected player would be shown in blue)
+ *  Switch between players by pressing the "Change Players" button. (The selected player would be shown in blue)
  *  Click on any 3 cards that you think are a set, these cards will be checked.
     - If they are a set, a point will be added for the player shown in blue
     - If they are not a set, a point will be decremented for the player shown in blue
