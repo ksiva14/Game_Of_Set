@@ -2,26 +2,20 @@
 
 ## Description
 
-This project is the classic card game, "Set". Graphics are implemented so the players can easily choose and visualize what cards make a set. 
+This project is the classic card game, "Set". Graphics are implemented so the players can easily choose and visualize what cards make a set. It takes our previous game of set in Ruby, and uses javascript, html, and css to replace ruby2d that we used for graphics.
+
 
 ## Contributors
 [Zheng Ji Tan](https://github.com/Just-ZJ), [Karthick Sivasubramanian](https://github.com/ksiva14), [Tyler Frantz](https://github.com/tylerfrantz), [Justin King](https://github.com/jking3019)
 
-## Install
-Make sure you have installed
-- ruby | [Course Website](http://web.cse.ohio-state.edu/~giles.25/3901/resources/vm-install.html) | [Official Website](https://www.ruby-lang.org/en/documentation/installation/)
-- [ruby2d](https://www.ruby2d.com/learn/get-started/):
-```
-sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
-gem install ruby2d
-```
 
 ## How to Play
   *  Number of Players: 2
-  *  To play a game, run these 2 commands:
+  *  To play a game, run this command:
 
-    cd lib
-    ruby lib/game_of_set.rb
+    node lib/javascript/game_of_set.js
+    open index.html
+
    *  A set consists of three cards satisfying all of these conditions:
 
     They all have the same number or have three different numbers.
@@ -44,11 +38,10 @@ gem install ruby2d
   *  The player with the highest score wins!
 
 ## Challenges Faced
-Many challenges were faced when creating this project. We switched structures to hold the cards many times, moving through lists, objects, and arrays. Using a new language, Ruby, and a new environment, Ubuntu, created many roadblocks and speed bumps while creating this project. 
+Many challenges were faced when creating this project. Learning Javascript quickly and weaving that with css and html was a challenge just trying to beat the clock. We were stuggling to debug because a couple of us forgot about dev tools, but once we found them things went much smoother. Working in classes in other files wasn't heavily documented on the internet so that took us a bit of time as well.
 
 ## Future Technologies
 If we had more time, we would want to add a couple things to our game. 
- * A popup message to display everything that was displayed to the terminal
  * Minigames where 1 player could race against a clock to find as many sets as they can and finding 1 set as fast as they can to refine their set finding skills would add new dimensions to our project. 
  * A computer to play against so the user doesn't need to find other players to play with
  * Add different difficulties where the user could pick how hard they want the game to be, and the harder they choose, the less amount of hints and time they would have. 
@@ -56,14 +49,20 @@ If we had more time, we would want to add a couple things to our game.
 
 
 ## Test Cases
+Giles told us that we did not need testing, but would like to see it. We made a couple test cases using the ruby gem watir. 
 Make sure you have installed
 - [minitest](https://docs.ruby-lang.org/en/2.0.0/MiniTest.html#module-MiniTest-label-INSTALL-3A)
 ```
 gem install minitest
 ```
+- [watir](https://rubygems.org/gems/watir/versions/6.19.1)
+```
+gem install watir
+```
   *  To run the test cases, ensure that you are in the test folder and run:
 
     ruby test_cases.rb 
+
 
 
 
