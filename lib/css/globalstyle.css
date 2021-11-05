@@ -3,7 +3,6 @@
   padding: 0px;
   border: 0px;
   margin: 0px;
-  flex-shrink: 0;
 }
 html,
 body {
@@ -63,10 +62,9 @@ body {
 #card-container {
   background-color: brown;
   width: 80%; /* 100% - .button-container.width */
-  overflow-y: scroll; /* make it scrollable if all 81 cards is shown */
+  overflow-y: auto; /* make it scrollable if all 81 cards is shown */
   margin: 0 0 25px 0;
   padding: 50px 0;
-
   /* add border  */
   border: 5px solid black;
   border-radius: 5px;
@@ -74,7 +72,8 @@ body {
   /* to position .card-container-row */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: space-evenly; */
+  align-items: center;
   /* spacing between each row of card */
   row-gap: 15px;
 }
@@ -86,13 +85,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* prevent it from changing size when adding cards */
+  flex-shrink: 0;
   /* spacing between each card */
   column-gap: 25px;
   height: 75px;
-
-  /* TODO: DELETE */
-  background-color: lightgreen;
-  width: 100%;
 }
 .cards {
   height: 125px;
@@ -127,4 +124,12 @@ button {
 button:hover {
   background-color: antiquewhite;
   color: black;
+  cursor: pointer;
+}
+#restart-game {
+  height: 150px;
+  width: 250px;
+  font-size: 2em;
+  /* center button */
+  margin: auto;
 }
