@@ -1,8 +1,8 @@
-# PG3901-Project1_GameOfSets
+# PG3901-Project5_JavaScriptGameOfSet
 
 ## Description
 
-This project is the classic card game, "Set". Graphics are implemented so the players can easily choose and visualize what cards make a set. It takes our previous game of set in Ruby, and uses javascript, html, and css to replace ruby2d that we used for graphics.
+This project is the classic card game, "Set". Graphics are implemented so that players can easily choose and visualize which cards make a set. It takes our previous game of set in Ruby, and uses javascript, html, and css to replace ruby2d that we used for graphics.
 
 
 ## Contributors
