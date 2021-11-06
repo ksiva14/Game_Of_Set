@@ -11,10 +11,7 @@ This project is the classic card game, "Set". Graphics are implemented so that p
 
 ## How to Play
   *  Number of Players: 2
-  *  To play a game, run this command:
-
-    node lib/javascript/game_of_set.js
-    open index.html
+  *  To play a game, run this open index.html.
 
    *  A set consists of three cards satisfying all of these conditions:
 
